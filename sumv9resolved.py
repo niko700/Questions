@@ -20,6 +20,9 @@ def number_sum(word):
             elif (word[i] in numbers) and (word[i-1] in numbers):
                 found_numbers[counter] += word[i]
 
+    print(found_numbers)
     print(sum(map(int, found_numbers)))
+
+number_sum("hello25hi10x")
 
 
