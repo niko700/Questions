@@ -1,7 +1,7 @@
 #function that adds up numbers hidden in strings to one sum
 #multiple-digit numbers have to be preserved
 
-def grab_number_sum(word):
+def number_sum(word):
     numbers = '1234567890'
     found_numbers = []
     counter = 0
