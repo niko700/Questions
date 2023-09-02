@@ -8,11 +8,6 @@ import tkinter as tk
 #making tkinter window
 window = tk.Tk()
 
-###make frames inside window
-###what do I do with these....?
-##frame_a = tk.Frame()
-##frame_b = tk.Frame()
-
 
 #make greeting line
 lbl_greeting = tk.Label(text = "What is your number?",
@@ -35,6 +30,7 @@ btn_button = tk.Button(text = "OK",
                     height = 1)
 btn_button.pack()
 
+
 #define calculate restuls function
 def convert(s):
     n = int(s)
@@ -48,11 +44,13 @@ def handle_click(event):
 
 btn_button.bind("<Button-1>", handle_click)
 
+
 #make results text
 lbl_results = tk.Label(text = "You are " + output + " % done!",
                     width = 20,
                     height = 5)
 lbl_results.pack()
+
 
 #run the window
 window.mainloop()
