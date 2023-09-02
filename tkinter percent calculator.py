@@ -21,7 +21,7 @@ ent_entry = tk.Entry()
 ent_entry.pack()
 
 #what to do with entered text
-string_number = entry.get()
+string_number = ent_entry.get()
 
 
 #making an "OK" button
@@ -40,13 +40,14 @@ def convert(s):
 
 #button click event --> calculate what's in the box
 def handle_click(event):
-    convert(string_number)
+    output = convert(string_number)
+    sentence = "You are " + output + " % done!"
 
 btn_button.bind("<Button-1>", handle_click)
 
 
 #make results text
-lbl_results = tk.Label(text = "You are " + output + " % done!",
+lbl_results = tk.Label(text = sentence,
                     width = 20,
                     height = 5)
 lbl_results.pack()
