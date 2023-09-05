@@ -1,6 +1,9 @@
 #This code is to create a small Tkinter window that asks for a number and
 #calculates what percentage it is of a larger number (hardcoded in).
 
+#Tried to incorporate some code from this example: https://insolor.github.io/effbot-tkinterbook-archive/entry.htm
+#Still get error where the entry window returns an empty string
+
 from sys import argv
 import tkinter as tk
 
