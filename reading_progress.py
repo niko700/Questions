@@ -54,6 +54,8 @@ def convert(s):
 #button click event --> calculate what's in the box
 def handle_click(event):
     btn.out_string = string.get()  #wouldn't this have to be reversed? because you are trying to get the variable to equal to the output of the button, not the other way around?
+    print("You typed: " + btn.out_string)
+    
     total = convert(out_string)
     to_display = "You're " + total + " % done!"
     lbl.configure(text = to_display)
